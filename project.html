@@ -39,13 +39,20 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+<style>
+figure {
+  padding: 4px;
+  margin: auto;
+  text-align: center;
+}
 
-  <!-- =======================================================
-  * Template Name: Imperial - v5.6.1
-  * Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+figcaption {
+  color: black;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+</style>
 </head>
 
 <body>
@@ -308,43 +315,58 @@ As previously stated, smartphone technology has gotten astronomically better sin
             <div class="section-title-divider"></div>
             <p class="section-description">The key technology of this project is Arduino. This IOT gadget acts as a bridge to operate and connect every key component together. Familiarity with developing Arduino and electrical safety are strictly required.<br><br>Environment data including the vehicle’s motion, speed and location, these data can be collected by using accelerometer and GPS module.<br><br>GY-251 module has a built-in MPU-6050 which is use for measuring velocity, orientation and gravitational forces.<br><br>GPS module: NEO-6M<br><br></p>
 	    <h2>Physical and Hardware Components:</h2>
-	    <p>Arduino<br>Accelerometer and Gyroscope Sensor: GY-251<br>GPS module: NEO-6M<br>Smart phones, running on Android and IOS operating systems<br><br></p>
+	    <p><b>Arduino Mini:</b> a compact version of Arduino, a microcontroller that is able to have computation power and interact with other electronic devices. In this project, this IOT gadget is the key component which acts as a bridge to operate and connect every key component together. Familiarity with developing Arduino and electrical safety are strictly required.</p>
+		<figure>
+  		  <img src="assets/img/fig1.png" alt="Figure 1" style="width:50%">
+  		  <figcaption>Figure 1 - Arduino Mini</figcaption>
+		</figure>
+		<figure>
+  		  <img src="assets/img/fig2.png" alt="Figure 2" style="width:50%">
+  		  <figcaption>Figure 2 - Arduino</figcaption>
+		</figure>
+	    <p><br><br><b>Accelerometer and Gyroscope Sensor:</b> GY-251. GY-251 module has a built-in MPU-6050 which is use for measuring velocity, orientation and gravitational forces. This component is used for detecting sudden changes in the vehicle’s movement to identify likely car crashes.</p>
+		<figure>
+  		  <img src="assets/img/fig3.png" alt="Figure 3" style="width:50%">
+  		  <figcaption>Figure 3</figcaption>
+		</figure>
+	    <p><br><br><b>GPS module:</b> NEO-6M. A module built for performing GPS (global positioning system) activities. This component capable of communicating with GPS satellites and locating. This component is to collect the positions of vehicles that happen to be in an accident. </p>
+		<figure>
+  		  <img src="assets/img/fig4.png" alt="Figure 4" style="width:50%">
+  		  <figcaption>Figure 4</figcaption>
+		</figure>
+	    <p>This project is built and based on the current smartphones running on Android and IOS operating systems, which are the most common OS in the smartphone industry.<br><br></p>
 	    <h2>Cloud Services:</h2>
-	    <p>AWS including: <br>Relational database services (RDS)<br>Simple Storage Services (S3)<br>Elastic Beanstalk<br>Lambda<br>API Gateway<br>Simple Notification Service (SNS)<br>Simple Email Service (SES)</p>
+	    <p>Amazon Web Services (AWS) provides a wide range of cloud services which can be utilised for many business models. AWS services are highly scalable and available across nations worldwide. In this project, the following services will be used:</p>
+		<ul>
+		    <li><b>Amazon Aurora:</b> a distributed relational database service with high availability. With storage auto-scaling and automatic replication, Aurora gains high fault-tolerance. Aurora is compatible with MySQL, which will be used as the main database for this project. </li>
+		    <li><b>Elastic Beanstalk:</b> a deployment environment for web applications. This service is a combination of other AWS services which assists the users on configuration and scaling. Elastic Beanstalk is serverless since users only need to deploy and the service will handle most of configuration and allocation for healthy web applications. This service is utilised for maintaining the website for the project. </li>
+		    <li><b>Lambda:</b> a serverless computing service. It acts as functions that execute the code and automatically manage resources for computing. This service is used for executing algorithms, managing requests between components and the web, and sending requests for email and SMS notifications. </li>
+		    <li><b>Simple Notification Service (SNS), Simple Email Service (SES):</b> web services for sending emails and SMS messages. These two services are used as a notification system of the project. </li><br>
+		</ul>
 	    <h2>Skills Required:</h2>
-	    <h4>Management skills:</h4>
-	    <p>Project coordination<br>
-Leadership<br>
-
-Scrum <br>
-
-Team working <br>
-
-Tasks management <br>
-
-Risks management <br>
-
-Documentation</p>
-	    <h4>Technical skills:</h4>
-	    <p>IoT devices development: Arduino and Arduino component. 
-
-Programming language: C and C++ 
-
-Web development. 
-
-Web programming languages: Java, NodeJS, HTML/CSS 
-
-Framework knowledges: Spring Boot, React 
-
-Mobile Application development 
-
-Mobile Framework knowledges: Mobile Angular UI 
-
-Database management: SQL 
-
-Cybersecurity: web and mobile applications 
-
-Cloud services and cloud architecture knowledges: AWS </p>
+		<h4>Management skills:</h4>
+		<ul>
+		    <li>Project coordination</li>
+		    <li>Leadership</li>
+		    <li>Scrum</li>
+		    <li>Team working</li>
+		    <li>Tasks management</li>
+		    <li>Risks management</li>
+		    <li>Documentation</li>
+		</ul><br>
+		<h4>Technical skills:</h4>
+		<ul>
+		    <li>IoT devices development: Arduino and Arduino component</li>
+		    <li>Programming language: C and C++ </li>
+		    <li>Web development </li>
+		    <li>Web programming languages: Java, NodeJS, HTML/CSS </li>
+		    <li>Framework knowledges: Spring Boot, React </li>
+		    <li>Mobile Application development </li>
+		    <li>Mobile Framework knowledges: Mobile Angular UI </li>
+		    <li>Database management: SQL </li>
+		    <li>Cybersecurity: web and mobile applications </li>
+		    <li>Cloud services and cloud architecture knowledges: AWS</li>
+		</ul>
           </div>
         </div>
       </div>
@@ -366,6 +388,37 @@ Cloud services and cloud architecture knowledges: AWS </p>
       <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
         <div class="row">
     </section><!-- End Testing Section -->
+
+    <!-- ======= Timeframe Section ======= -->
+    <section id="timeframe">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Timeframe</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">timeframe will go here</p>
+          </div>
+        </div>
+      </div>
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+    </section><!-- End Timeframe Section -->
+
+    <!-- ======= Risks Section ======= -->
+    <section id="risks">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Risks</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">One of the biggest risks we are taking with this project is, ironically, taking on this project. Because all members of this group are new to IT, this project is a huge risk considering our lack of experience and proficiency. This is because we will not have a baseline for a timeframe or experience with planning, group work, proper testing, the tools involved, revering from a failed test etc. So, with such little experience and knowledge, taking a project this grand with such consequences is a big risk in in of itself.<br><br>
+	    Another big risk is the responsibility that this product would put on us. It is intended to save lives and/or reduce injuries in vehicle related accidents. If it were to fail to do so, that would way heavily on the mental health of us as a group. This is a huge psychological risk we would we be taking by making this project a reality, it must work since you do not get do overs in real life. If the product fails, the responsibility would be on us as the creators, which could be extremely detrimental to our health.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+    </section><!-- End References Section -->
 
     <!-- ======= References Section ======= -->
     <section id="references">
